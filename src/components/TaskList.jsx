@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Plus, Filter, CheckCircle2, Clock, PlayCircle, Edit2, Trash2, Calendar } from 'lucide-react'
 import TaskForm from './TaskForm'
 
-const API_URL = 'http://localhost:3001/api'
+const API_URL = 'https://task-master-pro-api-v2kt.onrender.com/api'
 
 const statusConfig = {
   pending: {

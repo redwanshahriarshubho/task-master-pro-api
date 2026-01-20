@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { LogIn, UserPlus, Mail, Lock, User, CheckCircle2 } from 'lucide-react'
 
-const API_URL = 'http://localhost:3001/api'
+const API_URL = 'https://task-master-pro-api-v2kt.onrender.com/api'
 
 export default function Auth({ onAuthSuccess }) {
   const [isLogin, setIsLogin] = useState(true)
@@ -40,7 +40,7 @@ export default function Auth({ onAuthSuccess }) {
         setError(data.error || 'Something went wrong')
       }
     } catch (error) {
-      setError('Server error. Please make sure the backend is running on port 3001.')
+      setError('Server error. Please make sure the backend is running.')
     } finally {
       setLoading(false)
     }
@@ -187,8 +187,7 @@ export default function Auth({ onAuthSuccess }) {
 
         {/* Info Note */}
         <div className="mt-6 text-center text-white/40 text-sm">
-          <p>🚀 Backend should be running on port 3001</p>
-          <p className="mt-1">Run: <code className="bg-white/10 px-2 py-1 rounded">npm run server</code></p>
+          <p>🚀 Backend is running on Render</p>
         </div>
       </div>
     </div>

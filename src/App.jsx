@@ -3,7 +3,7 @@ import Auth from './components/Auth'
 import TaskList from './components/TaskList'
 import { LogOut, User } from 'lucide-react'
 
-const API_URL = 'http://localhost:3001/api'
+const API_URL = 'https://task-master-pro-api-v2kt.onrender.com/api'
 
 function App() {
   const [user, setUser] = useState(null)
